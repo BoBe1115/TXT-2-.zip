@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Kártyás weboldal</title>
+            <style>
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                }
+        
+                header {
+                    background-color: #333;
+                    color: white;
+                    padding: 15px;
+                    text-align: center;
+                }
+        
+                header nav {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                }
+        
+                header nav a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+        
+                header nav a:hover {
+                    text-decoration: underline;
+                }
+        
+                .hero {
+                    position: relative;
+                    background-image: url('meno hatterkep'); /* Replace with your image path */
+                    background-size: cover;
+                    background-position: center;
+                    height: 300px;
+                }
+        
+                .hero h1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                }
+        
+                .car-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 15px;
+                    padding: 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+        
+                .car-card {
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s;
+                }
+        
+                .car-card:hover {
+                    transform: scale(1.05);
+                }
+        
+                .car-card img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+        
+                .car-card .info {
+                    padding: 15px;
+                }
+        
+                .car-card .info h3 {
+                    margin: 0 0 10px;
+                    font-size: 18px;
+                    color: #333;
+                }
+        
+                .car-card .info p {
+                    margin: 5px 0;
+                    color: #666;
+                    font-size: 14px;
+                }
+        
+                footer {
+                    text-align: center;
+                    padding: 10px;
+                    background-color: #333;
+                    color: white;
+                    margin-top: 20px;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <header>
+            <h1>Kocsik</h1>
+            <nav>
+                <a href="index.html">Benzin</a>
+                <a href="abaout.html">Elektromos</a>
+                <a href="services.html">Dízel</a>
+            </nav>
+            </header>
+        
+            <div class="hero">
+            </div>
+        
+            <section class="car-grid">
+            <!-- Example Car Card -->
+            <div class="car-card">
+                <img src="byd.jpg.crdownload" alt="Byd seal">
+                <div class="info">
+                    <h3>Byd Seal</h3>
+                    <p>Év: 2025</p>
+                    <p>Ár: 18 00 000Ft</p>
+                    <p>300kW</p>
+                </div>
+            </div>
+            <!-- Repeat car cards -->
+            <div class="car-card">
+                <img src="Tesla.jpg" alt="Tesla model 3">
+                <div class="info">
+                    <h3>Tesla model 3</h3>
+                    <p>Év: 2019</p>
+                    <p>Ár: 7 700 000</p>
+                    <p>258kW</p>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="bmw i8.jpg" alt="Bmw i8">
+                <div class="info">
+                    <h3>Bmw i8</h3>
+                    <p>Év: 2016</p>
+                    <p>Ár: 22 000 000</p>
+                    <p>170kW</p>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+                <div class="car-card">
+                    <img src="Renault zoe.jpg" alt="Renault Zoe">
+                    <div class="info">
+                        <h3>Renault Zoe</h3>
+                        <p>Év: 2019</p>
+                        <p>Ár: 5 500 000Ft</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+                    <div class="car-card">
+                        <img src="Ford mustang e.jpg" alt="Ford Mustang e">
+                        <div class="info">
+                            <h3>Ford Mustang e</h3>
+                            <p>Év: 2024</p>
+                            <p>Ár: 15 500 000Ft</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+                    <div class="car-card">
+                        <img src="kia ev3.jpg" alt="kia ev3">
+                        <div class="info">
+                            <h3>kia ev3</h3>
+                            <p>Év: 2024</p>
+                            <p>Ár: 14 000 000Ft</p>
+                        </div>
+                    </div>
+                    <!-- Add more cards as needed -->
+                        <div class="car-card">
+                            <img src="Mercedes-Benz EQE 350+.jpg" alt="Mercedes-Benz EQE 350+">
+                            <div class="info">
+                                <h3>Mercedes-Benz EQE 350+</h3>
+                                <p>Év: 2022</p>
+                                <p>Ár: 27 000 000Ft</p>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                            <div class="car-card">
+                                <img src="Volkswagen e-Golf VII.jpg" alt="Volkswagen e-Golf VII">
+                                <div class="info">
+                                    <h3>Volkswagen e-Golf VII</h3>
+                                    <p>Év: 2019</p>
+                                    <p>Ár: 6 000 000Ft</p>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                                <div class="car-card">
+                                    <img src="Bmw i3.jpg" alt="Bmw i3">
+                                    <div class="info">
+                                        <h3>Bmw i3</h3>
+                                        <p>Év: 2019</p>
+                                        <p>Ár: 9 000 000Ft</p>
+                                    </div>
+                                </div>
+                                <!-- Add more cards as needed -->
+                                    <div class="car-card">
+                                        <img src="Opel e-astra.jpg" alt="Opel e-astra">
+                                        <div class="info">
+                                            <h3>Opel e-astra</h3>
+                                            <p>Év: 2024</p>
+                                            <p>Ár: 12 000 000Ft</p>
+                                        </div>
+                </section>
+        
+        
+        
+            </body>
+            </html>               
+html<a href="abaout.html">index</a>

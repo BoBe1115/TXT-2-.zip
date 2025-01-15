@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kártyás weboldal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            background-image: url('meno hatterkep'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .car-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .car-card:hover {
+            transform: scale(1.05);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .car-card .info {
+            padding: 15px;
+        }
+
+        .car-card .info h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .car-card .info p {
+            margin: 5px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kocsik</h1>
+    <nav>
+        <a href="index.html">Benzin</a>
+        <a href="abaout.html">Elektromos</a>
+        <a href="services.html">Dízel</a>
+    </nav>
+</header>
+
+<div class="hero">
+</div>
+
+<section class="car-grid">
+    <!-- Example Car Card -->
+    <div class="car-card">
+        <img src="skoda octavia.jpeg" alt="Skoda octavia">
+        <div class="info">
+            <h3>Skoda Octavia</h3>
+            <p>Év: 2017</p>
+            <p>Ár: 3 600 000Ft</p>
+        </div>
+    </div>
+    <!-- Repeat car cards -->
+    <div class="car-card">
+        <img src="Honda accord.jpeg" alt="Honda Accord">
+        <div class="info">
+            <h3>Honda Accord</h3>
+            <p>Év: 2014</p>
+            <p>Ár: 5 200 000</p>
+        </div>
+    </div>
+    <div class="car-card">
+        <img src="Kia Ceed.jpeg" alt="Kia Ceed">
+        <div class="info">
+            <h3>Kia Ceed</h3>
+            <p>Év: 2014</p>
+            <p>Ár: 3 400 000</p>
+        </div>
+    </div>
+    <!-- Add more cards as needed -->
+        <div class="car-card">
+            <img src="Hyundai i30.jpeg" alt="Hyundai i30">
+            <div class="info">
+                <h3>Hyundai i30</h3>
+                <p>Év: 2013</p>
+                <p>Ár: 3 500 000Ft</p>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+            <div class="car-card">
+                <img src="Ford Focus.jpeg" alt="Ford Focus">
+                <div class="info">
+                    <h3>Ford Focus</h3>
+                    <p>Év: 2020</p>
+                    <p>Ár: 4 900 000Ft</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+            <div class="car-card">
+                <img src="Volvo v60.jpeg" alt="Volvo v60">
+                <div class="info">
+                    <h3>Volvo v60</h3>
+                    <p>Év: 2022</p>
+                    <p>Ár: 12 000 000Ft</p>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+                <div class="car-card">
+                    <img src="alfaromeo gulia.jpg" alt="alfaromeo gulia">
+                    <div class="info">
+                        <h3>alfaromeo gulia</h3>
+                        <p>Év: 2017</p>
+                        <p>Ár: 5 600 000Ft</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+                    <div class="car-card">
+                        <img src="bmw 5.jpg" alt="bmw 5">
+                        <div class="info">
+                            <h3>bmw 5</h3>
+                            <p>Év: 2021</p>
+                            <p>Ár: 17 500 000Ft</p>
+                        </div>
+                    </div>
+                    <!-- Add more cards as needed -->
+                        <div class="car-card">
+                            <img src="Dachia Duster.jpg" alt="Dachia Daster">
+                            <div class="info">
+                                <h3>Dachia Daster</h3>
+                                <p>Év: 2017</p>
+                                <p>Ár: 4 000 000Ft</p>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                            <div class="car-card">
+                                <img src="Isuzu.jpg" alt="Isuzu">
+                                <div class="info">
+                                    <h3>Isuzu</h3>
+                                    <p>Év: 2024</p>
+                                    <p>Ár: 15 2300 000Ft</p>
+                                </div>
+        </section>
+
+
+
+
+
+</body>
+</html>
+html<a href="services.html">abaout</a>
